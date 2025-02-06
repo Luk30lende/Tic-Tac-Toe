@@ -12,7 +12,10 @@ hr {
 #board {
   width: 450px;
   height: 450px;
-  background-color: yellow;
+  /* background-color: gray; */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tile {
