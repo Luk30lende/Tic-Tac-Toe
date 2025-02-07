@@ -42,6 +42,7 @@ function setTile() {
   let c = parseInt(coords[1]);
 
   if (board[r][c] != " ") {
+    // if tile space already taken
     return;
   }
 
@@ -56,4 +57,71 @@ function setTile() {
   }
 
   checkWinner();
+}
+
+function checkWinner() {
+  // Horizontally
+  for (let r = 0; r < 3; r++) {
+    if (
+      board[r][0] == board[r][1] &&
+      board[r][1] == board[r][2] &&
+      board[r][0] != " "
+    ) {
+      for (i = 0; i < 3; i++) {
+        let tile = document.getElementById(r.toString() + "-" + i.toString());
+        tile.classList.add("winner");
+      }
+      gameOver = true;
+      return;
+    }
+  }
+
+  // Vertically
+  for (let c = 0; c < 3; c++) {
+    if (
+      board[0][c] == board[1][c] &&
+      board[1][c] == board[2][c] &&
+      board[0][c] != " "
+    ) {
+      for (i = 0; i < 3; i++) {
+        let tile = document.getElementById(i.toString() + "-" + c.toString());
+        tile.classList.add("winner");
+      }
+      gameOver = true;
+      return;
+    }
+  }
+
+  // Diagonally
+  if (
+    board[0][0] == board[1][1] &&
+    board[1][1] == board[2][2] &&
+    board[0][0] != " "
+  ) {
+    for (i = 0; i < 3; i++) {
+      let tile = document.getElementById(i.toString() + "-" + i.toString());
+      tile.classList.add("winner");
+    }
+    gameOver = true;
+    return;
+  }
+
+  // Anti-diagonally
+  if (
+    board[0][2] == board[1][1] &&
+    board[1][1] == board[2][0] &&
+    board[0][2] != " "
+  ) {
+    let tile = document.getElementById("0-2");
+    tile.classList.add("winner");
+
+    tile = document.getElementById("1-1");
+    tile.classList.add("winner");
+
+    tile = document.getElementById("2-0");
+    tile.classList.add("winner");
+
+    gameOver = true;
+    return;
+  }
 }
