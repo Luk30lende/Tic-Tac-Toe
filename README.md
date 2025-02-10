@@ -1,25 +1,30 @@
-# Tic-Tac-Toe Game
+# 🕹️ Tic-Tac-Toe Game
 
-A simple Tic-Tac-Toe game built using **HTML, CSS, and JavaScript**. This game allows a player to compete against the **computer/AI** with intelligent move selection.
+This is a simple **Tic-Tac-Toe** game built using **HTML, CSS, and JavaScript**. It allows players to compete against an **AI opponent**, which makes random moves after the player plays.
 
-## Features
+## 🚀 Features
 
-✅ **Play Against AI** – Challenge a computer opponent with strategic gameplay.  
-✅ **Interactive UI** – A clean and engaging interface for an immersive game experience.
+✅ **Play against the AI** – The computer automatically makes a move after the player.  
+✅ **Random AI moves** – The AI picks a random empty spot.  
+✅ **Dynamic UI updates** – The board updates in real time with player and AI moves.  
+✅ **Winner detection** – The game highlights the winning tiles.  
+✅ **Restart option (Coming Soon)** – A button to restart the game.
 
-## How to Play
+## 🎮 How to Play
 
 1. Open the `index.html` file in a browser.
-2. Click on an empty cell to make a move.
-3. The AI will automatically make its move.
+2. Click on an empty tile to make your move.
+3. The AI will automatically respond with its move.
+4. The game announces the winner or a tie.
+5. Refresh the page to play again.
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - **HTML** – Structure of the game.
 - **CSS** – Styling and animations.
 - **JavaScript** – Game logic and AI functionality.
 
-## Installation
+## 🔧 Installation & Setup
 
 1. Clone the repository:
    ```bash
@@ -31,17 +36,18 @@ A simple Tic-Tac-Toe game built using **HTML, CSS, and JavaScript**. This game a
    ```
 3. Open `index.html` in your browser.
 
-## Future Improvements
+## 🤖 Future Improvements
 
-- Enhance AI difficulty levels.
-- Add multiplayer support.
-- Improve animations and UI enhancements.
+- Smarter AI (Minimax algorithm).
+- Difficulty levels (Easy, Medium, Hard).
+- Reset button to restart the game.
+- Improved UI/UX.
 
-<!-- ## Screenshots
+<!-- ## 📷 Screenshots
 
 _Add screenshots of your game here._ -->
 
-## License
+## 📜 License
 
 This project is open-source and available under the **MIT License**.
 
