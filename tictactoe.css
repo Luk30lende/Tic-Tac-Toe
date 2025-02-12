@@ -1,31 +1,49 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 32px;
 }
 
 hr {
-  width: 500px;
+  width: 80%;
+  max-width: 500px;
   height: 3px;
   background-color: black;
+  margin: 10px auto;
 }
 
 #board {
-  width: 450px;
-  height: 450px;
-  /* background-color: gray; */
+  width: 90vw;
+  max-width: 450px;
+  height: 90vw;
+  max-height: 450px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 
 .tile {
+  width: calc(33.33% - 4px);
+  height: calc(33.33% - 4px);
+  font-size: 5vw; /* Adjust text size dynamically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .tile {
   width: 147px;
   height: 147px;
   font-size: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .horizontal-line {
   border-bottom: 3px solid black;
@@ -38,4 +56,20 @@ hr {
 .winner {
   background-color: lightgray;
   color: red;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #board {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .tile {
+    font-size: 8vw;
+  }
 }
