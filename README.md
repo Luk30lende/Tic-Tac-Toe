@@ -43,9 +43,10 @@ This is a simple **Tic-Tac-Toe** game built using **HTML, CSS, and JavaScript**.
 - Reset button to restart the game.
 - Improved UI/UX.
 
-<!-- ## 📷 Screenshots
+ ## 📷 Screenshots
 
-_Add screenshots of your game here._ -->
+![Screenshot](TicTacToe.html.png)
+
 
 ## 📜 License
 
