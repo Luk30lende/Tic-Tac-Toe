@@ -36,15 +36,6 @@ hr {
   align-items: center;
 }
 
-/* .tile {
-  width: 147px;
-  height: 147px;
-  font-size: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .horizontal-line {
   border-bottom: 3px solid black;
 }
