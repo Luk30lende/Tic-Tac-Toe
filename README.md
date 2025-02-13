@@ -5,7 +5,7 @@ This is a simple **Tic-Tac-Toe** game built using **HTML, CSS, and JavaScript**.
 ## 🚀 Features
 
 ✅ **Play Against AI** – The computer automatically makes a move after the player.  
-✅ **Smart AI Moves** – The AI prioritizes winning moves, blocks the player’s winning moves, and picks a random empty spot if no better option exists. 
+✅ **Smart AI Moves** – The AI prioritizes winning moves, blocks the player’s winning moves, and picks a random empty spot if no better option exists. <br>
 ✅ **Dynamic UI Updates** – The board updates in real time with player and AI moves.  
 ✅ **Winner Detection** – The game highlights the winning tiles.  
 ✅ **Restart Option (Coming Soon)** – A button to restart the game.
